@@ -12,14 +12,14 @@ from config import (BOT_NAME, SUPPORT_GROUP, OWNER_USERNAME, BOT_USERNAME)
 @bot.on_message(filters.command("start"))
 def start_(bot, message):
     
-    START_TEXT = """** Merhaba {}👋\n\n➡️ Ben {} \n\n➡️ Sesli Sohbetlerde Müzik Çalabiliyorum.\n\n➡️ Beni Grubuna Yönetici Olarak Ekle!**"""
+    START_TEXT = """Merhaba {}👋\n\n➡️ Ben {} \n\n➡️ Sesli Sohbetlerde Müzik Çalabiliyorum.\n\n➡️ Beni Grubuna Ekleyip Yönetici Yap.\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Karmak](https://t.me/ropeonline)"""
 
     START_BUTTON = [
                 [
                     InlineKeyboardButton(text="➕ Gruba Ekle ➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
-                    InlineKeyboardButton(text="📝 Destek", url=f"https://t.me/MagnifectDestek"),
+                    InlineKeyboardButton(text="✉️ Destek", url=f"https://t.me/MagnifectDestek"),
                     InlineKeyboardButton(text="📡 Support", url="https://t.me/MagnifectSupport"),
                 ],                
                 [                    
