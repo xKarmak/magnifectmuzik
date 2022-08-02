@@ -332,7 +332,7 @@ async def play(_, message: Message):
             photo="final.png",
             reply_markup=keyboard,
             caption="🔊 Parça Oynatılıyor . . .**\n\nTalep Eden : {}\n\n•> : {}".format(
-        message.chat.title, usrid
+       usrid, message.chat.title
         ), )
         
     
