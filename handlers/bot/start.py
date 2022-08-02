@@ -12,7 +12,7 @@ from config import (BOT_NAME, SUPPORT_GROUP, OWNER_USERNAME, BOT_USERNAME)
 @bot.on_message(filters.command("start"))
 def start_(bot, message):
     
-    START_TEXT = """Merhaba {}👋\n\n➡️ Ben {} \n\n➡️ Sesli Sohbetlerde Müzik Çalabiliyorum.\n\n➡️ Beni Grubuna Ekleyip Yönetici Yap.\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Karmak](https://t.me/ropeonline)"""
+    START_TEXT = """Merhaba {}👋\n\n🎵 Ben {}. \n\n🎵 Sesli Sohbetlerde Müzik Çalabiliyorum.\n\n🎵 Beni Grubuna Ekleyip Yönetici Yap."""
 
     START_BUTTON = [
                 [
@@ -23,7 +23,7 @@ def start_(bot, message):
                     InlineKeyboardButton(text="📡 Support", url="https://t.me/MagnifectSupport"),
                 ],                
                 [                    
-                    InlineKeyboardButton(text="📚 Tüm Komutlar ", url="https://t.me/magnifect/9"),
+                    InlineKeyboardButton(text="📚 Komutlar / Commands ", url="https://t.me/magnifect/9"),
                 ],
                 
             ]
