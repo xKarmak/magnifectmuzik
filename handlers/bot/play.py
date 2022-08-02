@@ -331,7 +331,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="🔊 Parça Oynatılıyor . . .**\n\n•> : {}\n\nTalep Eden : {}".format(
+            caption="🔊 Parça Oynatılıyor . . .**\n\n•> : {}\n\n süre {}  \n\nTalep Eden : {}".format(
         message.chat.title, usrid duration
         ), )
         
