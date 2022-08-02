@@ -172,10 +172,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="📝 Destek",
+                            text="✉️ Destek",
                             url=f"https://t.me/MagnifectDestek"),
                     InlineKeyboardButton(
-                            text="📍 Support",
+                            text="📡 Support",
                             url=f"https://t.me/MagnifectDestek"),                   
                ],
             ]
@@ -213,10 +213,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="📝 Destek",
+                            text="✉️ Destek",
                             url=f"https://t.me/MagnifectDestek"),
                     InlineKeyboardButton(
-                            text="📍 Support",
+                            text="📡 Support",
                             url=f"https://t.me/MagnifectSupport"),                   
                ],
             ]
@@ -231,10 +231,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="📝 Destek",
+                            text="✉️ Destek",
                             url=f"https://t.me/MagnifectDestek"),
                     InlineKeyboardButton(
-                            text="📍 Support",
+                            text="📡 Support",
                             url=f"https://t.me/MagnifectSupport"),                   
                ],
             ]
@@ -253,7 +253,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "Kullanım:\n > `/oynat` ( Şarkı adı ) "
             )
-        await lel.edit("▫️**Yükleniyor** 🌟")
+        await lel.edit("🔄 Yükleniyor...")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -278,7 +278,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**Sorgunuz bulunamadı tekrar deneyin **"
+                "⛔️ Şarkı bulunamadı . . ."
             )
             print(str(e))
             return
@@ -287,10 +287,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="📝 Destek",
+                            text="✉️ Destek",
                             url=f"https://t.me/MagnifectDestek"),
                     InlineKeyboardButton(
-                            text="📍 Support",
+                            text="📡 Support",
                             url=f"https://t.me/MagnifectSupport"),                   
                ],
             ]
@@ -312,7 +312,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)      
         await message.reply_photo(
             photo="final.png",
-            caption="▶️ **Parça Sıraya eklendi .**\n\nᴛᴀʟᴇᴘ ᴇᴅᴇɴ: {} \n\nsᴀʀᴋɪ ʟɪsᴛᴇsɪ : {}".format(usrid, position),
+            caption="▶️ **Parça Sıraya eklendi.**\n\nTalep Eden: {} \n\nŞarkı Listesi : {}".format(usrid, position),
             reply_markup=keyboard,
         )
         await message.delete()
@@ -331,7 +331,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Parça Oynatılıyor ️ . . .**\n\nɢʀᴜʙ : {}\n\nᴛᴀʟᴇᴘ ᴇᴅᴇɴ : {}".format(
+            caption="🔊 Parça Oynatılıyor . . .**\n\n•> : {}\n\nTalep Eden : {}".format(
         message.chat.title, usrid
         ), )
         
